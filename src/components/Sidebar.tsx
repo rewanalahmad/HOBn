@@ -8,7 +8,7 @@ function Sidebar() {
     padding: "10px",
     marginBottom: "8px",
     textDecoration: "none",
-    color: isActive ? "white" : "black",
+    color: isActive ? "white" : "white",
     background: isActive ? "#ae571a" : "transparent",
         borderRadius: "5px",
   });

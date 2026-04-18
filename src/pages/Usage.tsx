@@ -1,7 +1,7 @@
 import { gridStyle } from "../styles/layout";
 
 const cardStyle = {
-  background: "white",
+  background: "#ae571a",
   padding: "20px",
   borderRadius: "12px",
   border: "1px solid #e5e5e5",
@@ -42,15 +42,7 @@ export default function Usage() {
       {/* Upgrade Button */}
       <div style={{ marginTop: "20px" }}>
         <button
-          style={{
-            padding: "10px 20px",
-            cursor: "pointer",
-            background: "#970606",
-            color: "white",
-            border: "none",
-            borderRadius: "5px",
-          }}
-        >
+          style={{   padding: "10px 20px",     cursor: "pointer",    background: "#970606",   color: "white", border: "none", borderRadius: "5px", }}>
           Upgrade Plan
         </button>
       </div>
