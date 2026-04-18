@@ -11,3 +11,29 @@
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
+.card-status {
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 5px;
+  color: rgb(237, 227, 225);
+}
+
+.card-status.live {
+  background: green;
+}
+
+.card-status.coming {
+  background: orange;
+}
+.card-button {
+  margin-top: 15px;
+}
+
+.card-button button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: black;
+  color: white;
+}
