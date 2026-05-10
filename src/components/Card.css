@@ -1,39 +1,72 @@
 .card {
-  background: #ae571a;
-  padding: 20px;
-  border-radius: 12px;
-  border: 1px solid #e5e5e5;
+  background: #ffffff;
+  padding: 18px;
+  border-radius: 16px;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
   cursor: pointer;
-  transition: 0.2s;
+  transition: all 0.25s ease;
 }
 
 .card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
 }
+
+/* Title */
+.card-title {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+/* Description */
+.card-desc {
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 10px;
+}
+
+/* Category badge */
+.card-category {
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: #f3f4f6;
+  margin-right: 8px;
+}
+
+/* Status badge */
 .card-status {
-  font-size: 12px;
-  padding: 3px 8px;
-  border-radius: 5px;
-  color: rgb(237, 227, 225);
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  color: white;
 }
 
 .card-status.live {
-  background: green;
+  background: #10b981;
 }
 
 .card-status.coming {
-  background: orange;
+  background: #f59e0b;
 }
+
+/* Button */
 .card-button {
-  margin-top: 15px;
+  margin-top: 12px;
 }
 
 .card-button button {
   padding: 6px 12px;
+  border-radius: 8px;
   border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  background: black;
+  background: #111827;
   color: white;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.card-button button:hover {
+  background: #374151;
 }

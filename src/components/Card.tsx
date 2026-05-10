@@ -32,4 +32,5 @@ function Card({ name, description, category, status, onClick }: Props) {
   );
 }
 
+
 export default Card;

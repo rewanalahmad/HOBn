@@ -1,5 +1,5 @@
 import { gridStyle } from "../styles/layout";
-
+import { pageLayout } from "../styles/layout";
 const cardStyle = {
   background: "#ae571a",
   padding: "20px",
@@ -11,7 +11,7 @@ const cardStyle = {
 
 export default function Usage() {
   return (
-    <div>
+    <div style={pageLayout}>
       {/* Title */}
       <h1>Usage & Plan</h1>
 
@@ -42,7 +42,14 @@ export default function Usage() {
       {/* Upgrade Button */}
       <div style={{ marginTop: "20px" }}>
         <button
-          style={{   padding: "10px 20px",     cursor: "pointer",    background: "#970606",   color: "white", border: "none", borderRadius: "5px", }}>
+            style={{
+            padding: "10px 20px",
+            cursor: "pointer",
+            background: "#111827",
+            color: "white",
+            border: "none",
+            borderRadius: "10px",
+          }}>
           Upgrade Plan
         </button>
       </div>

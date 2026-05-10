@@ -1,7 +1,15 @@
 import Card from "../components/Card";
+import { gridStyle, pageLayout } from "../styles/layout";
+
+type App = {
+  name: string;
+  description: string;
+  category: string;
+  status: "Live" | "Coming Soon";
+};
 
 function AIApps() {
-  const apps : App[]= [
+  const apps: App[] = [
     {
       name: "Invoice AI",
       description: "Extract invoices automatically",
@@ -41,12 +49,16 @@ function AIApps() {
   ];
 
   return (
-    <div>
-      <h1>AI Apps</h1>
+    <div style={pageLayout}>
 
-      <div
-        style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "15px", }}
-      >
+      {/* Title */}
+      <h1 style={{ fontSize: "26px" }}>AI Apps</h1>
+      <p style={{ color: "#6b7280", marginBottom: "20px" }}>
+        Browse available AI applications in your platform.
+      </p>
+
+      {/* Grid */}
+      <div style={gridStyle}>
         {apps.map((app, i) => (
           <Card
             key={i}
@@ -55,17 +67,12 @@ function AIApps() {
             category={app.category}
             status={app.status}
             onClick={() => alert(`Opening ${app.name}`)}
-
           />
         ))}
       </div>
+
     </div>
   );
 }
-type App = {
-  name: string;
-  description: string;
-  category: string;
-  status: "Live" | "Coming Soon";
-};
+
 export default AIApps;
