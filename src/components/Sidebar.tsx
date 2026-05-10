@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import { gridStyle } from "../styles/layout";
 import "./Sidbar.css";
 
 function Sidebar() {
