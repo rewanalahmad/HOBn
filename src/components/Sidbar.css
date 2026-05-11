@@ -6,6 +6,14 @@
   }
 }
 
+
+
+.sidebar-title {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+
 .sidebar {
   width: 240px;
   height: 100vh;
@@ -15,14 +23,23 @@
   position: fixed;
   left: 0;
   top: 0;
+  overflow-y: auto;
 }
 
-.sidebar-title {
-  margin-bottom: 20px;
-  font-size: 18px;
-}
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+  }
 
-.sidebar-nav {
-  display: flex;
-  flex-direction: column;
+  .sidebar nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
 }

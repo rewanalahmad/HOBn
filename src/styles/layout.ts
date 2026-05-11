@@ -7,7 +7,7 @@ columnGap: "15px",
 };
 
 export const pageLayout = {
-  marginLeft: "260px",
+  marginLeft: window.innerWidth > 768 ? "260px" : "0px",
   padding: "20px",
   color: "#111827",
   background: "#f5f7fb",
