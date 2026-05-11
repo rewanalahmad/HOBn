@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Card from "../components/Card";
-import { gridStyle } from "../styles/layout";
+import {pageLayout, gridStyle } from "../styles/layout";
 
 function TaskRunner() {
   const [task, setTask] = useState("summarize document");
@@ -22,7 +22,7 @@ function TaskRunner() {
   };
 
   return (
-    <div style={{ marginLeft: "260px", padding: "20px" }}>
+    <div style={pageLayout}>
 
       {/* Title */}
       <h1 style={{ fontSize: "26px", marginBottom: "10px" }}>
