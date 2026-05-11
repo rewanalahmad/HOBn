@@ -94,8 +94,7 @@ All AI-related functionality is simulated using mock JSON data to represent expe
 
 ## Live Demo
 
-(Add your Vercel/Netlify link here)
-
+https://ho-bn-9mxu.vercel.app/
 ---
 
 ## Author
